@@ -63,6 +63,7 @@ $$
 $$
 - Fitness: maximize negative total penalty (boundary violations + pairwise overlaps)
 $$Fitness = \sum_{i=1}^{N} (P_{bound}(x_i) + P_{bound}(y_i)) + P_{overlap}$$
+
 $$P_{bound}(x) = \max(0, r - x) + \max(0, x + r - 1)$$
 
 $$P_{bound}(y) = \max(0, r - y) + \max(0, y + r - 1)$$
