@@ -67,7 +67,7 @@ $$P_{bound}(x) = \max(0, r - x) + \max(0, x + r - 1)$$
 
 $$P_{bound}(y) = \max(0, r - y) + \max(0, y + r - 1)$$
 
-$$P_{overlap} = \sum_{i<j} \max(0, 2r - d_{ij})^2$$
+$$P_{overlap} = \sum_{i < j} \max(0, 2r - d_{ij})^2$$
 
 - Termination: stop at 50,000 iterations or earlier if all p<sub>i</sub> values are converged (near 0 or 1)
 
