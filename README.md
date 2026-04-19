@@ -57,11 +57,14 @@ Place circles in the unit square to avoid overlap and boundary violations.
 - Domain: [0, 1] &times; [0, 1]
 - Representation: 10 bits per coordinate (x, y), genome length = N &times; 2 &times; 10
 - Decoding: map each 10-bit segment to [0, 1]
+
 $$
 \mathrm{val}_{\mathrm{float}} =
 \frac{\sum_{i=0}^{k-1} b_i \cdot 2^{k-1-i}}{2^k - 1}
 $$
+
 - Fitness: maximize negative total penalty (boundary violations + pairwise overlaps)
+
 $$Fitness = \sum_{i=1}^{N} (P_{bound}(x_i) + P_{bound}(y_i)) + P_{overlap}$$
 
 $$P_{bound}(x) = \max(0, r - x) + \max(0, x + r - 1)$$
